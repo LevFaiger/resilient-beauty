@@ -1,0 +1,63 @@
+{
+  "site": {
+    "title": "Resilient Beauty",
+    "subtitle": "Jewish Artists Who Survived the Holocaust and Rebuilt Art in Israel",
+    "description": "An exhibition celebrating the artistic legacy of Holocaust survivors who transformed their trauma into timeless beauty"
+  },
+  "navigation": {
+    "home": "Home",
+    "artists": "Artists",
+    "premium": "Premium Access"
+  },
+  "hero": {
+    "cta": "Explore Artists",
+    "premiumCta": "Get Full Access"
+  },
+  "artists": {
+    "title": "The Artists",
+    "viewAll": "View All Artists",
+    "freeAccess": "Free Access",
+    "premiumRequired": "Premium Required",
+    "aboutArtist": "About the Artist",
+    "biography": "Biography",
+    "artwork": "Artwork",
+    "resources": "Resources & Archives",
+    "officialArchive": "Official Archive",
+    "years": "Years",
+    "archiveNote": "This profile is part of the Resilient Beauty permanent digital archive."
+  },
+  "premium": {
+    "title": "Access Full Collection",
+    "subtitle": "Support this exhibition to unlock all artist profiles",
+    "description": "Your contribution helps preserve and share the stories of these remarkable artists with future generations.",
+    "features": {
+      "title": "Premium Access Includes:",
+      "feature1": "Access to all artist profiles",
+      "feature2": "High-resolution artwork images",
+      "feature3": "Extended biographies and historical context",
+      "feature4": "Support for ongoing preservation efforts"
+    },
+    "price": "$18",
+    "priceNote": "One-time payment",
+    "cta": "Get Premium Access",
+    "freeNote": "10 artists are freely accessible"
+  },
+  "success": {
+    "title": "Thank You!",
+    "subtitle": "You now have full access to all artist profiles",
+    "description": "Your support helps preserve these important stories for future generations.",
+    "cta": "Explore All Artists"
+  },
+  "footer": {
+    "quote": "Even in the darkness, there is light. Even in the silence, there is a song.",
+    "copyright": "Resilient Beauty Exhibition. All rights reserved."
+  },
+  "common": {
+    "share": "Share",
+    "linkCopied": "Link Copied!",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "back": "Back",
+    "learnMore": "Learn More"
+  }
+}
