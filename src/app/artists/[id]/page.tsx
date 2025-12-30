@@ -24,10 +24,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${artist.name.en} | Resilient Beauty`,
+    title: `${artist.name.en} | The Upcoming Spring Would Be Mine`,
     description: artist.biography.en.slice(0, 160),
     openGraph: {
-      title: `${artist.name.en} | Resilient Beauty`,
+      title: `${artist.name.en} | The Upcoming Spring Would Be Mine`,
       description: artist.biography.en.slice(0, 160),
       images: [artist.imageUrl],
     },

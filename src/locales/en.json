@@ -1,8 +1,20 @@
 {
   "site": {
-    "title": "Resilient Beauty",
+    "title": "The Upcoming Spring Would Be Mine",
     "subtitle": "Jewish Artists Who Survived the Holocaust and Rebuilt Art in Israel",
     "description": "An exhibition celebrating the artistic legacy of Holocaust survivors who transformed their trauma into timeless beauty"
+  },
+  "titleStory": {
+    "attribution": "— A Memory Shared by Jakob Zim (Cymberknopf)",
+    "paragraph1": "It was 1945. The Russians were closing in, and the Germans forced us out of the Blechhammer camp onto a death march. Every step was a fight against exhaustion, against the fear of the guard's gun. My brother, Nathan, and I held each other up, knowing that if one of us fell, we would both be lost.",
+    "paragraph2": "Then, I saw them: two other brothers. One couldn't go on. He was begging his brother to leave him, to save himself. But the brother couldn't do it. He wouldn't abandon him.",
+    "paragraph3": "The German guard saw their struggle. In a terrible instant, the guard shot them both. I witnessed that terrible loyalty, that horrific end. I felt the last of my hope draining away.",
+    "subheading": "The Unthinkable Light",
+    "paragraph4": "A couple of hours after that murder, as we marched on, the sun began to rise. It illuminated the distant rooftops—houses with red tiles, glistening against the snow. It was the beauty of creation itself.",
+    "paragraph5": "I looked at Nathan, and I said to him: \"Natek, look how beautiful it is!\"",
+    "paragraph6": "I was stunned. I couldn't comprehend it: \"I don't understand how from the murder I ran out for the beauty of creation.\"",
+    "paragraph7": "In that moment, despite the horrors I had just witnessed, I felt an absolute reawakening of the will to live. I knew, with deep inner certainty, that:",
+    "quote": "\"The upcoming spring would be mine.\""
   },
   "navigation": {
     "home": "Home",
@@ -24,7 +36,9 @@
     "resources": "Resources & Archives",
     "officialArchive": "Official Archive",
     "years": "Years",
-    "archiveNote": "This profile is part of the Resilient Beauty permanent digital archive."
+    "archiveNote": "This profile is part of The Upcoming Spring Would Be Mine permanent digital archive.",
+    "watchVideo": "Watch Video",
+    "paintingStyle": "Painting Style & Subject Matter"
   },
   "premium": {
     "title": "Access Full Collection",
@@ -50,7 +64,7 @@
   },
   "footer": {
     "quote": "Even in the darkness, there is light. Even in the silence, there is a song.",
-    "copyright": "Resilient Beauty Exhibition. All rights reserved."
+    "copyright": "The Upcoming Spring Would Be Mine Exhibition. All rights reserved."
   },
   "common": {
     "share": "Share",

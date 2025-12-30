@@ -70,6 +70,18 @@ export function ArtistCard({ artist, showBadge = true }: ArtistCardProps) {
             </span>
           </div>
         )}
+
+        {/* Video icon */}
+        {artist.videoUrl && (
+          <div className="absolute top-3 left-3">
+            <span className="flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-red-600 text-white">
+              <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              Video
+            </span>
+          </div>
+        )}
       </div>
 
       <div className="p-6">

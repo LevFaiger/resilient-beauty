@@ -18,21 +18,21 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Resilient Beauty | Jewish Artists of the Post-War Era',
-  description: 'An exhibition celebrating the artistic legacy of Holocaust survivors who transformed their trauma into timeless beauty. Featuring 11 remarkable artists who rebuilt their lives and art in Israel.',
+  title: 'The Upcoming Spring Would Be Mine | Jewish Artists of the Post-War Era',
+  description: 'An exhibition celebrating the artistic legacy of Holocaust survivors who transformed their trauma into timeless beauty. Featuring remarkable artists who rebuilt their lives and art in Israel.',
   keywords: [
     'Holocaust survivors',
     'Jewish artists',
     'Israeli art',
     'Post-war art',
-    'Resilient Beauty',
+    'The Upcoming Spring Would Be Mine',
     'Art exhibition',
     'Holocaust remembrance',
     'Jewish heritage',
   ],
-  authors: [{ name: 'Resilient Beauty Exhibition' }],
+  authors: [{ name: 'The Upcoming Spring Would Be Mine Exhibition' }],
   openGraph: {
-    title: 'Resilient Beauty | Jewish Artists of the Post-War Era',
+    title: 'The Upcoming Spring Would Be Mine | Jewish Artists of the Post-War Era',
     description: 'An exhibition celebrating the artistic legacy of Holocaust survivors who transformed their trauma into timeless beauty.',
     type: 'website',
     locale: 'en_US',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Resilient Beauty | Jewish Artists of the Post-War Era',
+    title: 'The Upcoming Spring Would Be Mine | Jewish Artists of the Post-War Era',
     description: 'An exhibition celebrating the artistic legacy of Holocaust survivors.',
   },
   robots: {

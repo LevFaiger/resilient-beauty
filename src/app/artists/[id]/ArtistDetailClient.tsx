@@ -61,6 +61,43 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
               </p>
             </div>
           </div>
+
+          {/* Additional Images */}
+          {artist.additionalImages && artist.additionalImages.length > 0 && (
+            <div className="grid grid-cols-2 gap-4">
+              {artist.additionalImages.map((img, idx) => (
+                <div key={idx} className="relative overflow-hidden rounded-xl shadow-lg bg-stone-200 aspect-square border-4 border-white">
+                  <Image
+                    src={img}
+                    alt={`${artist.name[language]} - ${idx + 2}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Video Link */}
+          {artist.videoUrl && (
+            <a
+              href={artist.videoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 p-4 bg-red-600 hover:bg-red-700 text-white rounded-xl shadow-lg transition-all group"
+            >
+              <div className="w-12 h-12 flex items-center justify-center bg-white/20 rounded-full group-hover:scale-110 transition-transform">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+              <div>
+                <div className="font-bold text-lg">{t('artists.watchVideo')}</div>
+                <div className="text-red-200 text-sm">YouTube</div>
+              </div>
+            </a>
+          )}
         </div>
 
         {/* Right Column: Biography */}
@@ -87,6 +124,18 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
               {artist.biography[language]}
             </div>
           </section>
+
+          {/* Painting Style and Subject Matter */}
+          {artist.paintingStyle && (
+            <section className="prose prose-stone prose-lg max-w-none mt-10">
+              <h2 className="text-2xl font-serif font-bold text-stone-800 mb-6 border-b pb-2 inline-block border-amber-500">
+                {t('artists.paintingStyle')}
+              </h2>
+              <div className="text-stone-700 leading-relaxed text-lg whitespace-pre-wrap font-light">
+                {artist.paintingStyle[language]}
+              </div>
+            </section>
+          )}
 
           {/* Resources */}
           {artist.links.length > 0 && (

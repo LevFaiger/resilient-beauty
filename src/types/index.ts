@@ -10,7 +10,10 @@ export interface Artist {
   name: LocalizedString;
   biography: LocalizedString;
   imageUrl: string;
+  additionalImages?: string[];
+  videoUrl?: string;
   paintingDescription: LocalizedString;
+  paintingStyle?: LocalizedString;
   links: string[];
   isFree: boolean;
   birthYear?: number;
