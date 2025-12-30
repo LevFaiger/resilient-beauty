@@ -9,13 +9,13 @@ export function Hero() {
   const { isPremium } = usePremium();
 
   return (
-    <section className="relative w-full min-h-[80vh] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-[50vh] md:min-h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-stone-900/50 z-10" />
 
       {/* Background image - using a placeholder gradient for now */}
       <div
-        className="absolute inset-0 bg-gradient-to-br from-stone-800 via-stone-700 to-amber-900"
+        className="absolute inset-0 bg-gradient-to-b from-stone-800 via-stone-800 to-stone-700"
         aria-hidden="true"
       />
 
