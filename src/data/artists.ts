@@ -22,6 +22,29 @@ export const artists: Artist[] = [
     birthYear: 1920
   },
   {
+    id: "eliezer-grinberg",
+    name: { en: "Eliezer Grinberg", he: "אליעזר גרינברג", ru: "Элиэзер Гринберг" },
+    biography: {
+      en: "Born in Lviv, Poland (now Ukraine). His talent was recognized early by his uncle, an architect and painter. He studied at the School of Decorative Arts in Lviv and was accepted to the Academy of Art in Kraków. When WWII broke out, he was captured by the Russians and secured his release by painting a portrait of Tchaikovsky. He worked as a decorator in the USSR and was accepted into the Russian Union of Artists. In 1945, he found only one sister had survived the Holocaust. He helped locate orphaned child survivors and arrange their transfer to Israel. He immigrated to Israel in 1949 aboard the ship Negba, living in Kiryat Motzkin until his death in 1965.",
+      he: "נולד בלבוב, פולין (כיום אוקראינה). כישרונו התגלה מוקדם על ידי דודו הארכיטקט. למד בבית הספר לאומנות דקורטיבית בלבוב והתקבל לאקדמיה לאומנות בקרקוב. עם פרוץ מלחמת העולם השנייה נפל בשבי הרוסי ושוחרר לאחר שצייר פורטרט של צ'ייקובסקי. עבד כדקורטור בברית המועצות והתקבל לאגודת הציירים הרוסית. ב-1945 גילה כי רק אחות אחת שרדה מהמשפחה. עסק באיתור ילדים יתומים ניצולי שואה ושליחתם לארץ. עלה לישראל ב-1949 באונייה 'נגבה' וחי בקריית מוצקין עד מותו ב-1965.",
+      ru: "Родился во Львове, Польша (ныне Украина). Его талант рано заметил дядя — архитектор и художник. Учился в Школе декоративного искусства во Львове и был принят в Академию искусств в Кракове. С началом Второй мировой войны попал в русский плен и освободился, написав портрет Чайковского. Работал декоратором в СССР и был принят в Союз художников России. В 1945 году узнал, что из семьи выжила только одна сестра. Помогал находить детей-сирот, переживших Холокост, и отправлять их в Израиль. Репатриировался в Израиль в 1949 году на корабле «Негба», жил в Кирьят-Моцкине до смерти в 1965 году."
+    },
+    imageUrl: "/images/artists/eliezer-grinberg.jpg",
+    animationUrls: [
+      "https://youtube.com/shorts/aAMOm5XStzs?si=e-9jbpy1kikGQmiE",
+      "https://youtube.com/shorts/V6pY0GDdJeY?si=JyrK4OT6fTPGgKSy"
+    ],
+    paintingDescription: { en: "Israeli Landscape, Oil on canvas", he: "נוף ישראלי, שמן על בד", ru: "Израильский пейзаж, холст, масло" },
+    paintingStyle: {
+      en: "Stylistic Shift: Accustomed to the conservative, dark, and gray realist-naturalist style of Russian painting, Grinberg was captivated by the Israeli sun and landscape. His style dramatically changed to Impressionism, full of light and color.\n\nInfluences: In his later years, many of his works show the strong influence of the Expressionist style, particularly Van Gogh, whom he admired.\n\nSubject Matter: During his years in Israel, Grinberg frequently painted Israeli landscapes (Haifa, Tiberias, Safed, Acre, Jerusalem, Tel Aviv-Jaffa, Netanya), portraits (including self-portraits and his daughters), and subjects related to Judaism and the Holocaust.",
+      he: "שינוי סגנוני: לאחר שהיה רגיל לציור שמרני, אפרורי וריאליסטי-נטורליסטי ברוסיה, הוקסם גרינברג מאור השמש והנוף הישראלי. סגנונו השתנה לאימפרסיוניסטי, מלא אור וצבע.\n\nהשפעות: בשנותיו האחרונות ניכרת ביצירותיו השפעה חזקה של אקספרסיוניזם ושל הצייר ואן-גוך.\n\nנושאי יצירה: הרבה לצייר נופי הארץ (חיפה, טבריה, צפת, ירושלים, יפו ועוד), דיוקנאות (כולל דיוקן עצמי ובנותיו), ונושאים הקשורים ליהדות ולשואה.",
+      ru: "Смена стиля: Привыкший к консервативному, тёмному и серому реалистично-натуралистическому стилю русской живописи, Гринберг был очарован израильским солнцем и пейзажем. Его стиль кардинально изменился на импрессионизм, полный света и цвета.\n\nВлияния: В поздние годы в его работах заметно сильное влияние экспрессионизма, особенно Ван Гога, которым он восхищался.\n\nТематика: В Израиле часто писал местные пейзажи (Хайфа, Тверия, Цфат, Акко, Иерусалим, Тель-Авив-Яффа, Нетания), портреты (включая автопортреты и портреты дочерей) и сюжеты, связанные с иудаизмом и Холокостом."
+    },
+    links: [],
+    isFree: true,
+    deathYear: 1965
+  },
+  {
     id: "blanka-tauber",
     name: { en: "Blanka Tauber", he: "בלנקה טאובר", ru: "Бланка Таубер" },
     biography: {

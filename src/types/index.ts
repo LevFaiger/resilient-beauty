@@ -13,6 +13,7 @@ export interface Artist {
   imageUrl: string;
   additionalImages?: string[];
   videoUrl?: string;
+  animationUrls?: string[];
   paintingDescription: LocalizedString;
   paintingStyle?: LocalizedString;
   links: string[];

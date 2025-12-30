@@ -51,22 +51,20 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
         {/* Left Column: Artwork */}
         <div className="space-y-6">
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-stone-200 aspect-[4/5] border-8 border-white">
+          <div className="overflow-hidden rounded-2xl shadow-2xl bg-stone-100 border-8 border-white">
             <Image
               src={artist.imageUrl}
               alt={l(artist.name)}
-              fill
-              className="object-cover"
+              width={800}
+              height={1000}
+              className="w-full h-auto object-contain"
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-md p-6 text-white border-t border-white/10">
-              <h3 className="text-xl font-bold mb-1">{t('artists.artwork')}</h3>
-              <p className="text-stone-300 italic font-light">
-                {l(artist.paintingDescription)}
-              </p>
-            </div>
           </div>
+          <p className="text-stone-500 italic text-center mt-3">
+            {l(artist.paintingDescription)}
+          </p>
 
           {/* Additional Images */}
           {artist.additionalImages && artist.additionalImages.length > 0 && (
@@ -103,6 +101,31 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
                 <div className="text-red-200 text-sm">YouTube</div>
               </div>
             </a>
+          )}
+
+          {/* Animation Links */}
+          {artist.animationUrls && artist.animationUrls.length > 0 && (
+            <div className="space-y-2">
+              {artist.animationUrls.map((url, idx) => (
+                <a
+                  key={idx}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 bg-purple-600 hover:bg-purple-700 text-white rounded-xl shadow-lg transition-all group"
+                >
+                  <div className="w-12 h-12 flex items-center justify-center bg-white/20 rounded-full group-hover:scale-110 transition-transform">
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M4 6.47L5.76 10H20v8H4V6.47M22 4h-4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-bold text-lg">{t('artists.watchAnimation')} {artist.animationUrls!.length > 1 ? `#${idx + 1}` : ''}</div>
+                    <div className="text-purple-200 text-sm">YouTube</div>
+                  </div>
+                </a>
+              ))}
+            </div>
           )}
         </div>
 

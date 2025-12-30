@@ -46,15 +46,6 @@ export function ArtistCard({ artist, showBadge = true }: ArtistCardProps) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
 
-        {/* Hover overlay for non-locked artists */}
-        {!isLocked && (
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
-            <span className="text-white font-bold flex items-center gap-2">
-              {t('artists.aboutArtist')}
-              <span aria-hidden="true">&rarr;</span>
-            </span>
-          </div>
-        )}
 
         {/* Lock overlay for premium artists */}
         {isLocked && (
@@ -77,17 +68,25 @@ export function ArtistCard({ artist, showBadge = true }: ArtistCardProps) {
           </div>
         )}
 
-        {/* Video icon */}
-        {artist.videoUrl && (
-          <div className="absolute top-3 left-3">
+        {/* Video and Animation icons */}
+        <div className="absolute top-3 left-3 flex flex-col gap-1">
+          {artist.videoUrl && (
             <span className="flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-red-600 text-white">
               <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M8 5v14l11-7z" />
               </svg>
               Video
             </span>
-          </div>
-        )}
+          )}
+          {artist.animationUrls && artist.animationUrls.length > 0 && (
+            <span className="flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-purple-600 text-white">
+              <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4 6.47L5.76 10H20v8H4V6.47M22 4h-4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4z"/>
+              </svg>
+              Animation
+            </span>
+          )}
+        </div>
       </div>
 
       <div className="p-6">
