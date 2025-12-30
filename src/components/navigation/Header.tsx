@@ -24,7 +24,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <Link
           href="/"
-          className="text-xl font-serif font-bold tracking-tight text-stone-800 hover:text-amber-700 transition-colors"
+          className="text-sm sm:text-base md:text-xl font-serif font-bold tracking-tight text-stone-800 hover:text-amber-700 transition-colors max-w-[150px] sm:max-w-none leading-tight"
         >
           {t('site.title')}
         </Link>

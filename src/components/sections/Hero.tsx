@@ -21,7 +21,7 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative z-20 text-center text-white px-4 max-w-4xl">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 drop-shadow-lg animate-fade-in">
+        <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 drop-shadow-lg animate-fade-in">
           {t('site.title')}
         </h1>
         <p className="text-xl md:text-2xl font-light mb-12 tracking-wide text-stone-100 animate-slide-up">
@@ -34,6 +34,7 @@ export function Hero() {
           >
             {t('hero.cta')}
           </Link>
+          {/* Temporarily hidden
           {!isPremium && (
             <Link
               href="/premium/"
@@ -42,6 +43,7 @@ export function Hero() {
               {t('hero.premiumCta')}
             </Link>
           )}
+          */}
         </div>
       </div>
     </section>
