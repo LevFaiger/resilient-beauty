@@ -1,8 +1,9 @@
-export type Language = 'en' | 'he';
+export type Language = 'en' | 'he' | 'ru';
 
 export interface LocalizedString {
   en: string;
   he: string;
+  ru?: string;
 }
 
 export interface Artist {

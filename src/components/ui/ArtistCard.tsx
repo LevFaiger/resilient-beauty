@@ -2,11 +2,16 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Artist } from '@/types';
+import { Artist, LocalizedString, Language } from '@/types';
 import { useLanguage } from '@/hooks/useLanguage';
 import { usePremium } from '@/hooks/usePremium';
 import { LockIcon } from './PremiumBadge';
 import { cn } from '@/lib/utils';
+
+// Helper to get localized text with English fallback
+const getLocalizedText = (text: LocalizedString, lang: Language): string => {
+  return text[lang] || text.en;
+};
 
 interface ArtistCardProps {
   artist: Artist;
@@ -15,6 +20,7 @@ interface ArtistCardProps {
 
 export function ArtistCard({ artist, showBadge = true }: ArtistCardProps) {
   const { language, t } = useLanguage();
+  const l = (text: LocalizedString) => getLocalizedText(text, language);
   const { isPremium } = usePremium();
 
   const isLocked = !artist.isFree && !isPremium;
@@ -31,7 +37,7 @@ export function ArtistCard({ artist, showBadge = true }: ArtistCardProps) {
       <div className="aspect-[4/3] overflow-hidden relative bg-stone-200">
         <Image
           src={artist.imageUrl}
-          alt={artist.name[language]}
+          alt={l(artist.name)}
           fill
           className={cn(
             "object-cover transition duration-700",
@@ -86,10 +92,10 @@ export function ArtistCard({ artist, showBadge = true }: ArtistCardProps) {
 
       <div className="p-6">
         <h3 className="text-xl font-serif font-bold text-stone-800 mb-2">
-          {artist.name[language]}
+          {l(artist.name)}
         </h3>
         <p className="text-stone-500 text-sm line-clamp-3 leading-relaxed">
-          {artist.biography[language]}
+          {l(artist.biography)}
         </p>
 
         {/* Years */}

@@ -4,9 +4,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
-import { Artist } from '@/types';
+import { Artist, LocalizedString, Language } from '@/types';
 import { useLanguage } from '@/hooks/useLanguage';
 import { usePremium } from '@/hooks/usePremium';
+
+// Helper to get localized text with English fallback
+const getLocalizedText = (text: LocalizedString, lang: Language): string => {
+  return text[lang] || text.en;
+};
 
 interface ArtistDetailClientProps {
   artist: Artist;
@@ -14,6 +19,7 @@ interface ArtistDetailClientProps {
 
 export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
   const { language, t } = useLanguage();
+  const l = (text: LocalizedString) => getLocalizedText(text, language);
   const { isPremium } = usePremium();
   const router = useRouter();
 
@@ -48,7 +54,7 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
           <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-stone-200 aspect-[4/5] border-8 border-white">
             <Image
               src={artist.imageUrl}
-              alt={artist.name[language]}
+              alt={l(artist.name)}
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -57,7 +63,7 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
             <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-md p-6 text-white border-t border-white/10">
               <h3 className="text-xl font-bold mb-1">{t('artists.artwork')}</h3>
               <p className="text-stone-300 italic font-light">
-                {artist.paintingDescription[language]}
+                {l(artist.paintingDescription)}
               </p>
             </div>
           </div>
@@ -69,7 +75,7 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
                 <div key={idx} className="relative overflow-hidden rounded-xl shadow-lg bg-stone-200 aspect-square border-4 border-white">
                   <Image
                     src={img}
-                    alt={`${artist.name[language]} - ${idx + 2}`}
+                    alt={`${l(artist.name)} - ${idx + 2}`}
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 50vw, 25vw"
@@ -104,7 +110,7 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
         <div className="flex flex-col">
           <header className="mb-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-stone-900 mb-4 tracking-tight">
-              {artist.name[language]}
+              {l(artist.name)}
             </h1>
             {(artist.birthYear || artist.deathYear) && (
               <div className="flex items-center gap-4 text-stone-500 font-medium">
@@ -121,7 +127,7 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
               {t('artists.biography')}
             </h2>
             <div className="text-stone-700 leading-relaxed text-lg whitespace-pre-wrap font-light">
-              {artist.biography[language]}
+              {l(artist.biography)}
             </div>
           </section>
 
@@ -132,7 +138,7 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
                 {t('artists.paintingStyle')}
               </h2>
               <div className="text-stone-700 leading-relaxed text-lg whitespace-pre-wrap font-light">
-                {artist.paintingStyle[language]}
+                {l(artist.paintingStyle)}
               </div>
             </section>
           )}
