@@ -31,8 +31,8 @@ export const artists: Artist[] = [
     },
     imageUrl: "/images/artists/eliezer-grinberg.jpg",
     animationUrls: [
-      "https://youtube.com/shorts/aAMOm5XStzs?si=e-9jbpy1kikGQmiE",
-      "https://youtube.com/shorts/V6pY0GDdJeY?si=JyrK4OT6fTPGgKSy"
+      "https://drive.google.com/file/d/1tXAGNDC2Fkn2XJ6T8D-lp0j0p3Gxd2t9/view?usp=drivesdk",
+      "https://drive.google.com/file/d/1fzl7pPDVS7n9PCZpmYhTSzJaq273m3dE/view?usp=drivesdk"
     ],
     paintingDescription: { en: "Israeli Landscape, Oil on canvas", he: "נוף ישראלי, שמן על בד", ru: "Израильский пейзаж, холст, масло" },
     paintingStyle: {

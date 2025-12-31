@@ -121,7 +121,7 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
                   </div>
                   <div>
                     <div className="font-bold text-lg">{t('artists.watchAnimation')} {artist.animationUrls!.length > 1 ? `#${idx + 1}` : ''}</div>
-                    <div className="text-purple-200 text-sm">YouTube</div>
+                    <div className="text-purple-200 text-sm">Google Drive</div>
                   </div>
                 </a>
               ))}
