@@ -12,9 +12,22 @@ export function Footer() {
         <p className="font-serif italic text-stone-300 text-lg mb-4">
           &ldquo;{t('footer.quote')}&rdquo;
         </p>
-        <p className="text-sm">
+        <p className="text-sm mb-8">
           &copy; {currentYear} {t('footer.copyright')}
         </p>
+
+        {/* Copyright Warning */}
+        <div className="border-t border-stone-700 pt-8 mt-8 max-w-3xl mx-auto">
+          <h4 className="text-stone-300 font-semibold text-sm uppercase tracking-wide mb-3">
+            {t('footer.copyrightTitle')}
+          </h4>
+          <p className="text-stone-500 text-xs leading-relaxed mb-2">
+            {t('footer.copyrightOwnership')}
+          </p>
+          <p className="text-stone-500 text-xs leading-relaxed">
+            {t('footer.copyrightWarning')}
+          </p>
+        </div>
       </div>
     </footer>
   );
