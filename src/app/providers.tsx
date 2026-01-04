@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react';
 import { LanguageProvider, useLanguage } from '@/hooks/useLanguage';
 import { PremiumProvider } from '@/hooks/usePremium';
 
@@ -16,10 +16,12 @@ function RtlWrapper({ children }: { children: ReactNode }) {
 
 export function Providers({ children }: { children: ReactNode }) {
   return (
-    <LanguageProvider>
-      <PremiumProvider>
-        <RtlWrapper>{children}</RtlWrapper>
-      </PremiumProvider>
-    </LanguageProvider>
+    <Suspense fallback={<div className="min-h-screen" />}>
+      <LanguageProvider>
+        <PremiumProvider>
+          <RtlWrapper>{children}</RtlWrapper>
+        </PremiumProvider>
+      </LanguageProvider>
+    </Suspense>
   );
 }
