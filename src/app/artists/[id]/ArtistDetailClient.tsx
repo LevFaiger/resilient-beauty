@@ -3,10 +3,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Artist, LocalizedString, Language } from '@/types';
 import { useLanguage } from '@/hooks/useLanguage';
 import { usePremium } from '@/hooks/usePremium';
+import { ImageLightbox } from '@/components/ui/ImageLightbox';
 
 // Helper to get localized text with English fallback
 const getLocalizedText = (text: LocalizedString, lang: Language): string => {
@@ -22,6 +23,7 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
   const l = (text: LocalizedString) => getLocalizedText(text, language);
   const { isPremium } = usePremium();
   const router = useRouter();
+  const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null);
 
   // Redirect to premium page if artist is not free and user is not premium
   useEffect(() => {
@@ -51,17 +53,20 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
         {/* Left Column: Artwork */}
         <div className="space-y-6">
-          <div className="overflow-hidden rounded-2xl shadow-2xl bg-stone-100 border-8 border-white">
+          <button
+            onClick={() => setLightboxImage({ src: artist.imageUrl, alt: l(artist.name) })}
+            className="overflow-hidden rounded-2xl shadow-2xl bg-stone-100 border-8 border-white cursor-zoom-in group w-full"
+          >
             <Image
               src={artist.imageUrl}
               alt={l(artist.name)}
               width={800}
               height={1000}
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority
             />
-          </div>
+          </button>
           <p className="text-stone-500 italic text-center mt-3">
             {l(artist.paintingDescription)}
           </p>
@@ -70,15 +75,30 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
           {artist.additionalImages && artist.additionalImages.length > 0 && (
             <div className="grid grid-cols-2 gap-4">
               {artist.additionalImages.map((img, idx) => (
-                <div key={idx} className="relative overflow-hidden rounded-xl shadow-lg bg-stone-200 aspect-square border-4 border-white">
+                <button
+                  key={idx}
+                  onClick={() => setLightboxImage({ src: img, alt: `${l(artist.name)} - ${idx + 2}` })}
+                  className="relative overflow-hidden rounded-xl shadow-lg bg-stone-200 aspect-square border-4 border-white group cursor-zoom-in"
+                >
                   <Image
                     src={img}
                     alt={`${l(artist.name)} - ${idx + 2}`}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                     sizes="(max-width: 1024px) 50vw, 25vw"
                   />
-                </div>
+                  {/* Zoom icon overlay */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+                    <svg
+                      className="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                  </div>
+                </button>
               ))}
             </div>
           )}
@@ -201,6 +221,14 @@ export function ArtistDetailClient({ artist }: ArtistDetailClientProps) {
           </p>
         </div>
       </div>
+
+      {/* Image Lightbox */}
+      <ImageLightbox
+        src={lightboxImage?.src || ''}
+        alt={lightboxImage?.alt || ''}
+        isOpen={!!lightboxImage}
+        onClose={() => setLightboxImage(null)}
+      />
     </div>
   );
 }

@@ -11,11 +11,23 @@ export function Hero() {
   return (
     <section className="relative w-full min-h-[50vh] md:min-h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background overlay */}
-      <div className="absolute inset-0 bg-stone-900/50 z-10" />
+      <div className="absolute inset-0 bg-stone-900/60 z-10" />
 
-      {/* Background image - using a placeholder gradient for now */}
+      {/* Video background */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+        aria-hidden="true"
+      >
+        <source src="/videos/hero-bg.mp4" type="video/mp4" />
+      </video>
+
+      {/* Fallback background for when video doesn't load */}
       <div
-        className="absolute inset-0 bg-gradient-to-b from-stone-800 via-stone-800 to-stone-700"
+        className="absolute inset-0 bg-gradient-to-b from-stone-800 via-stone-800 to-stone-700 -z-10"
         aria-hidden="true"
       />
 
