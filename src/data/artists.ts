@@ -98,14 +98,33 @@ export const artists: Artist[] = [
     id: "dan-moscona",
     name: { en: "Dan Moscona", he: "דן מוסקונה", ru: "Дан Москона" },
     biography: {
-      en: "Born in Bulgaria. During the dark years of WWII, he was hidden and protected by a righteous Bulgarian policeman. This act of humanity amidst tragedy allowed him to later bring Bulgarian influences into the Israeli art scene.",
-      he: "נולד בבולגריה. במהלך השנים החשוכות של מלחמת העולם השנייה, הוא הוסתר והוגן על ידי שוטר בולגרי חסיד אומות עולם. מעשה אנושי זה בתוך הטרגדיה אפשר לו להביא מאוחר יותר השפעות בולגריות לסצנת האמנות הישראלית.",
-      ru: "Родился в Болгарии. В тёмные годы Второй мировой войны его прятал и защищал праведный болгарский полицейский. Этот акт человечности среди трагедии позволил ему позже привнести болгарское влияние в израильскую арт-сцену."
+      en: "Dan Moscona was born in 1931 in Bulgaria. In 1948, at age 17, he immigrated to Israel. He studied at the Avni Institute in Tel Aviv under teachers such as Yohanan Simon and Marcel Janco, and later trained in Paris at the Académie de la Grande Chaumière. Moscona was strongly identified with the Artists' Quarter in Old Jaffa, where he established his studio and became an integral part of the local art scene.",
+      he: "דן מוסקונה נולד בשנת 1931 בבולגריה. בשנת 1948, בגיל 17, עלה לישראל. הוא למד במכון אבני בתל אביב אצל מורים כגון יוחנן סימון ומרסל ינקו, ובהמשך השתלם בפריז באקדמיה \"גרנד שומייר\". מוסקונה היה מזוהה מאוד עם קריית האמנים ביפו העתיקה, שם הקים את הסטודיו שלו והפך לחלק בלתי נפרד מהנוף האמנותי המקומי.",
+      ru: "Дан Москона родился в 1931 году в Болгарии. В 1948 году, в возрасте 17 лет, репатриировался в Израиль. Учился в Институте Авни в Тель-Авиве у таких преподавателей, как Йоханан Симон и Марсель Янко, а затем совершенствовался в Париже в Академии Гранд-Шомьер. Москона был тесно связан с Кварталом художников в Старой Яффе, где основал свою студию и стал неотъемлемой частью местной арт-сцены."
     },
     imageUrl: "/images/artists/dan-moscona.jpg",
+    additionalImages: ["/images/artists/dan-moscona-repair.jpg"],
     paintingDescription: { en: "Oil on canvas, 82X40", he: "שמן על בד 82X40 חתום וממוסגר", ru: "Холст, масло, 82x40" },
+    paintingStyle: {
+      en: "Moscona's style is deeply rooted in Figurative Expressionism, characterized by a bold use of color and a structural approach to composition. His work often feels monumental, even when depicting everyday scenes. His primary subjects include the human form in motion—laborers, dancers, and musicians—often using thick, energetic brushstrokes to convey vitality. Much of his work focuses on the architecture and atmosphere of Old Jaffa, capturing the specific golden hour light of the Mediterranean coast. Influenced by Yohanan Simon, many of his paintings depict the collective life of early Israel with dignity and warmth.",
+      he: "סגנונו של מוסקונה הוא פיגורטיבי-אקספרסיבי, המתאפיין בשימוש עז בצבע ובבנייה קומפוזיציונית איתנה. הדמות האנושית: הוא הרבה לצייר דמויות בתנועה – רקדנים, נגנים ופועלים – תוך דגש על חיוניות וכוח. נופי יפו: ציוריו לוכדים את הארכיטקטורה והאור המיוחד של יפו העתיקה. ריאליזם חברתי: בהשפעת יוחנן סימון, הוא תיאר סצנות מחיי היומיום של החברה הישראלית המתגבשת בקיבוצים ובערים.",
+      ru: "Стиль Москоны глубоко укоренён в фигуративном экспрессионизме, для которого характерно смелое использование цвета и структурный подход к композиции. Его работы часто выглядят монументально, даже при изображении повседневных сцен. Его основные сюжеты включают человеческую фигуру в движении — рабочих, танцоров и музыкантов — часто с использованием густых, энергичных мазков для передачи жизненной силы. Значительная часть его работ посвящена архитектуре и атмосфере Старой Яффы, улавливая особый золотой свет Средиземноморского побережья."
+    },
     links: ["https://bjmoreshet.org/the-community/education/claims-conference-project/dan-moskuna/"],
-    isFree: true
+    isFree: true,
+    repairInfo: {
+      imageUrl: "/images/artists/dan-moscona-repair.jpg",
+      heading: {
+        en: "Help Heal the Canvas of History",
+        he: "עזרו לרפא את בד ההיסטוריה",
+        ru: "Помогите исцелить холст истории"
+      },
+      description: {
+        en: "This original oil on canvas is suffering from structural fatigue. Because canvas is a natural fiber, it \"breathes\" with changes in Relative Humidity (RH). These constant fluctuations have caused the paint to lose its bond with the fabric.\n\nThe Risk: Without stabilization, the paint will continue to flake and pop off the surface.\n\nThe Solution: Professional consolidation to re-adhere the paint and structural reinforcement to protect the canvas from humidity-driven expansion.",
+        he: "ציור שמן מקורי זה על בד סובל מעייפות מבנית. מכיוון שבד הוא סיב טבעי, הוא \"נושם\" עם שינויים בלחות היחסית. תנודות מתמשכות אלה גרמו לצבע לאבד את הקשר שלו עם הבד.\n\nהסיכון: ללא ייצוב, הצבע ימשיך להתקלף ולהתנתק מהמשטח.\n\nהפתרון: איחוי מקצועי להדבקה מחדש של הצבע וחיזוק מבני להגנה על הבד מהתפשטות הנגרמת מלחות.",
+        ru: "Эта оригинальная картина маслом на холсте страдает от структурной усталости. Поскольку холст является натуральным волокном, он «дышит» при изменениях относительной влажности. Эти постоянные колебания привели к тому, что краска потеряла сцепление с тканью.\n\nРиск: Без стабилизации краска продолжит отслаиваться и отпадать с поверхности.\n\nРешение: Профессиональная консолидация для повторного приклеивания краски и структурное укрепление для защиты холста от расширения, вызванного влажностью."
+      }
+    }
   },
   {
     id: "paul-fux",
@@ -333,6 +352,39 @@ export const artists: Artist[] = [
     isFree: true,
     birthYear: 1920,
     deathYear: 1982
+  },
+  {
+    id: "shlomo-schwartz",
+    name: { en: "Shlomo Schwartz", he: "שלמה שוורץ", ru: "Шломо Шварц" },
+    biography: {
+      en: "Shlomo Schwartz was born in 1934 in Bukovina, Romania. His childhood was profoundly shaped by the outbreak of World War II; following the Romanian occupation and the implementation of anti-Jewish policies, he and his family were deported in 1941 to the Transnistria region. He spent the war years as a young child enduring the harsh conditions of the labor camps and ghettos there. Following the liberation in 1944, he eventually made his way to Israel in 1948, arriving just as the state was being established.\n\nHis formal artistic education began at the Avni Institute of Art and Design in Tel Aviv, where he studied under prominent Israeli masters such as Marcel Janco and Yehezkel Streichman. Following his studies in Israel, he traveled to Paris to further refine his craft at the École des Beaux-Arts. Throughout his career, Schwartz became a prominent figure in the Israeli art scene, settling in Tel Aviv and establishing a long-standing studio. He was a member of the Israel Painters and Sculptors Association and exhibited his work globally until his passing in 2011.",
+      he: "שלמה שוורץ נולד בשנת 1934 בבוקובינה שברומניה. ילדותו עמדה בצל אימי מלחמת העולם השנייה; עם הכיבוש הרומני והחלת הגזירות נגד היהודים, הוא ומשפחתו גורשו בשנת 1941 לאזור טרנסניסטריה. את שנות המלחמה העביר כילד צעיר בתנאים הקשים של הגטאות ומחנות העבודה באזור זה. לאחר השחרור ב-1944, פעל לעלות ארצה ובשנת 1948 הגיע לישראל, בדיוק עם הקמת המדינה.\n\nאת השכלתו האמנותית הפורמלית החל בסיבוב \"מכון אבני\" בתל אביב, שם למד אצל גדולי האמנות הישראלית כמו מרסל ינקו ויחזקאל שטרייכמן. בהמשך השתלם בפריז בבית הספר הלאומי הגבוה לאמנויות (École des Beaux-Arts). במהלך הקריירה שלו הפך שוורץ לדמות בולטת בסצנת האמנות בישראל, קבע את ביתו וסטודיו בתל אביב והיה חבר באגודת הציירים והפסלים. הוא הציג בתערוכות יחיד וקבוצתיות רבות בארץ ובעולם עד לפטירתו בשנת 2011.",
+      ru: "Шломо Шварц родился в 1934 году в Буковине, Румыния. Его детство было глубоко затронуто началом Второй мировой войны; после румынской оккупации и введения антиеврейских законов он и его семья были депортированы в 1941 году в район Транснистрии. Он провёл военные годы маленьким ребёнком в тяжёлых условиях трудовых лагерей и гетто. После освобождения в 1944 году он в конечном итоге добрался до Израиля в 1948 году, прибыв как раз в момент создания государства.\n\nЕго формальное художественное образование началось в Институте Авни в Тель-Авиве, где он учился у выдающихся израильских мастеров, таких как Марсель Янко и Йехезкель Штрайхман. После учёбы в Израиле он отправился в Париж для совершенствования в Школе изящных искусств. На протяжении своей карьеры Шварц стал видной фигурой израильской арт-сцены, обосновавшись в Тель-Авиве и создав постоянную студию. Он был членом Ассоциации художников и скульпторов Израиля и выставлял свои работы по всему миру до своей смерти в 2011 году."
+    },
+    imageUrl: "/images/artists/shlomo-schwartz.jpg",
+    paintingDescription: { en: "Oil on canvas", he: "שמן על בד", ru: "Холст, масло" },
+    paintingStyle: {
+      en: "Schwartz's work is characterized by a lyrical, figurative style that often borders on Expressionism. Having survived the Holocaust, his work often carried a deep, underlying humanist empathy. He blended European academic traditions with the vibrant, atmospheric light of Israel, using fluid brushwork that emphasized emotion over rigid realism.\n\nHis subject matter was deeply rooted in the Jewish experience and the local landscape: Musicians and Klezmer—he frequently painted violinists and cellists, capturing the \"soul\" of the music as a nod to his Eastern European heritage. The Israeli Landscape—scenes of Jaffa and Jerusalem, often rendered with a sense of historical weight and nostalgia. People and Markets—he focused on the working class and everyday scenes in markets, treating his subjects with a quiet dignity. Symbolic Still Lifes—intimate compositions that utilized soft light to create a sense of peace and reflection.",
+      he: "סגנונו של שוורץ מאופיין בקו פיגורטיבי-לירי הנוטה לאקספרסיוניזם. כמי ששרד את השואה, עבודותיו נשאו לעיתים קרובות מטען של אמפתיה הומניסטית עמוקה. הוא הצליח לשלב בין המסורת האקדמית האירופית לבין האור האווירתי והתוסס של ארץ ישראל, תוך שימוש במשיכות מכחול זורמות המדגישות רגש על פני דיוק ריאליסטי נוקשה.\n\nנושאי יצירתו היו נטועים עמוק בחוויה היהודית ובנוף המקומי: מוזיקאים וכליזמרים—הוא הרבה לצייר נגני כינור וצ'לו, כשהוא לוכד את ה\"נשמה\" של המוזיקה. נופי הארץ—מראות מיפו ומירושלים, המתוארים עם תחושה של נוסטלגיה וכובד היסטורי. דמויות ושווקים—הוא התמקד בחיי היומיום, באנשים עובדים ובסצנות שוק, תוך הענקת כבוד שקט לדמויותיו. טבע דומם—קומפוזיציות אינטימיות המשתמשות באור רך כדי ליצור תחושת שלווה והתבוננות פנימית.",
+      ru: "Работы Шварца характеризуются лирическим, фигуративным стилем, часто граничащим с экспрессионизмом. Пережив Холокост, его работы часто несли глубокое гуманистическое сопереживание. Он сочетал европейские академические традиции с ярким атмосферным светом Израиля, используя плавные мазки, подчёркивающие эмоции, а не жёсткий реализм.\n\nЕго тематика была глубоко укоренена в еврейском опыте и местном пейзаже: Музыканты и клезмер—он часто писал скрипачей и виолончелистов, улавливая «душу» музыки как дань своему восточноевропейскому наследию. Израильский пейзаж—виды Яффы и Иерусалима, часто переданные с ощущением исторической значимости и ностальгии. Люди и рынки—он сосредотачивался на рабочем классе и повседневных рыночных сценах, относясь к своим героям с тихим достоинством. Символические натюрморты—интимные композиции с мягким светом, создающие ощущение покоя и созерцания."
+    },
+    links: [],
+    isFree: true,
+    birthYear: 1934,
+    deathYear: 2011,
+    repairInfo: {
+      imageUrl: "/images/artists/shlomo-schwartz.jpg",
+      heading: {
+        en: "Urgent: Stop the Acid Decay",
+        he: "דחוף: עצרו את הריקבון החומצי",
+        ru: "Срочно: Остановите кислотный распад"
+      },
+      description: {
+        en: "Painted on non-archival cardboard during a time of extreme scarcity, this work is in a state of chemical crisis. The material is inherently acidic (low pH), causing the fibers to become brown, brittle, and prone to snapping.\n\nThe Risk: The support is \"self-destructing\" due to lignin-based acidity.\n\nThe Solution: Immediate chemical deacidification to neutralize the pH levels and archival mounting to prevent the board from crumbling.",
+        he: "צוירה על קרטון לא ארכיוני בתקופה של מחסור קיצוני, יצירה זו נמצאת במשבר כימי. החומר הוא חומצי מטבעו (pH נמוך), מה שגורם לסיבים להשחים, להפוך לשבירים ונוטים להישבר.\n\nהסיכון: המשטח \"מתפרק מעצמו\" בשל חומציות מבוססת ליגנין.\n\nהפתרון: ניטרול כימי מיידי של רמות ה-pH והרכבה ארכיונית למניעת התפוררות הלוח.",
+        ru: "Написанная на неархивном картоне во времена крайней нехватки материалов, эта работа находится в состоянии химического кризиса. Материал по своей природе кислотный (низкий pH), что приводит к потемнению, хрупкости и ломкости волокон.\n\nРиск: Основа «саморазрушается» из-за кислотности на основе лигнина.\n\nРешение: Немедленная химическая нейтрализация для стабилизации уровня pH и архивная установка для предотвращения рассыпания картона."
+      }
+    }
   }
 ];
 

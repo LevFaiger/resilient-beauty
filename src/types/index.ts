@@ -6,6 +6,12 @@ export interface LocalizedString {
   ru?: string;
 }
 
+export interface RepairInfo {
+  imageUrl: string;
+  heading: LocalizedString;
+  description: LocalizedString;
+}
+
 export interface Artist {
   id: string;
   name: LocalizedString;
@@ -20,6 +26,7 @@ export interface Artist {
   isFree: boolean;
   birthYear?: number;
   deathYear?: number;
+  repairInfo?: RepairInfo;
 }
 
 export interface Translation {
