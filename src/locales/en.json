@@ -19,7 +19,35 @@
   "navigation": {
     "home": "Home",
     "artists": "Artists",
+    "exhibitions": "Exhibitions",
     "premium": "Premium Access"
+  },
+  "exhibitions": {
+    "title": "Exhibitions",
+    "subtitle": "Where this story is being told",
+    "current": {
+      "label": "Currently on view",
+      "name": "The Next Spring Will Be Mine",
+      "venue": "Olpan Etzion Carmel Studio",
+      "address": "Hanamal 67, Haifa, Israel",
+      "opening": "Opened June 18, 2026",
+      "dates": "On view through July 16, 2026",
+      "hoursTitle": "Visiting Hours",
+      "hoursThursday": "Thursday: 4:00 PM – 10:00 PM",
+      "hoursFriday": "Friday: 9:00 AM – 4:00 PM",
+      "curatorLabel": "Curator",
+      "curatorName": "Lev Faiger",
+      "supportLabel": "In partnership with",
+      "supportText": "Haifa Municipality and the Authority for Immigration Absorption",
+      "guestsLabel": "Honored Guests at the Opening",
+      "guestMayor": "Yona Yahav, Mayor of Haifa",
+      "guestChair": "Tatiana John, Chair of the Authority for Immigration Absorption",
+      "aboutTitle": "About the Exhibition",
+      "aboutText": "The exhibition gathers works by Holocaust survivors who transformed loss and trauma into creative expression. Rather than documenting destruction, these paintings carry forward resilience, memory, and a renewed hope—the upcoming spring claimed back as their own.",
+      "readArticle": "Read the article in Haipo",
+      "galleryTitle": "From the Opening",
+      "galleryAlt": "Photograph from the opening of The Next Spring Will Be Mine, Haifa, June 2026"
+    }
   },
   "hero": {
     "cta": "Explore Artists",
@@ -68,7 +96,9 @@
     "copyright": "The Upcoming Spring Would Be Mine Exhibition. All rights reserved.",
     "copyrightTitle": "Copyright and Usage Warning",
     "copyrightOwnership": "All images, paintings, and photographs displayed on this website are the exclusive property of The Upcoming Spring Would Be Mine Exhibition (© 2026) and are owned by Lev Faiger and Yulia Warshavsky.",
-    "copyrightWarning": "Strictly Prohibited: Any form of copying, capturing, downloading, use, publication, or distribution of any visual material from this website (including personal or commercial use) is strictly prohibited, unless explicit written permission is obtained from Lev Faiger."
+    "copyrightWarning": "Strictly Prohibited: Any form of copying, capturing, downloading, use, publication, or distribution of any visual material from this website (including personal or commercial use) is strictly prohibited, unless explicit written permission is obtained from Lev Faiger.",
+    "facebookLabel": "Follow us on Facebook",
+    "facebookUrl": "https://www.facebook.com/profile.php?id=61579692522680"
   },
   "common": {
     "share": "Share",

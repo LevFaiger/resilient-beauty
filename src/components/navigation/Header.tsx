@@ -42,6 +42,12 @@ export function Header() {
           >
             {t('navigation.artists')}
           </Link>
+          <Link
+            href="/exhibitions/"
+            className="text-stone-600 hover:text-amber-700 transition-colors font-medium"
+          >
+            {t('navigation.exhibitions')}
+          </Link>
 
           <div className="flex items-center gap-2">
             {/* Share button */}

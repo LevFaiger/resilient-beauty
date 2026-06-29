@@ -1,0 +1,92 @@
+import { Language } from '@/types';
+
+interface CuratorNote {
+  label: string;
+  title: string;
+  attribution: string;
+  paragraphs: string[];
+}
+
+export const curatorNote: Record<Language, CuratorNote> = {
+  en: {
+    label: "Curator's Note",
+    title: 'Why I Created This Exhibition',
+    attribution: '— Lev Faiger, Curator',
+    paragraphs: [
+      'I have always wanted to understand what helps a person, after tragedy, not just exist but live again — fully. Where do people find strength? What rekindles the inner fire?',
+      'We live in a very difficult time. Especially today, in Israel. Some people are wounded, some lose loved ones, some encounter things they could never have imagined before. And then the central question arises: how does one go on living after that?',
+      'Most people listening to us right now are driving, at work, or going about their day. We want to believe they are well. But perhaps somewhere among them is a person who, precisely today, urgently needs to hear that life can continue after tragedy.',
+      'When I bought my first painting, I myself was going through a hard time. It was not just a purchase. It was more of an instinct — as though I were looking not for an object but for something to hold on to. Only later did I understand: I was not looking for a painting. I was looking for an answer to the question of how a person keeps living after an inner collapse.',
+      'So I began to look for artists who had passed through such trials themselves, or who had grown up in families where the memory of the Holocaust shaped everything that followed. What struck me was that many of them had not merely survived — they had changed. Their view of the world had become different. Their art had become different.',
+      'Yaakov Wassover is one of the strongest examples for me. He was born in Łódź. At thirteen, he found himself in the ghetto, then passed through Auschwitz and a death march. He lost his parents and his brother.',
+      'After all of this, a person could have spent his entire life painting only death and destruction. But Wassover chose differently. He became a guardian of the memory of a vanished Jewish town.',
+      'He said that almost every night his memories and nightmares returned to him: happy days, years of grief, the destruction of their entire world. In the morning he would get up, remember his dream — and go to paint.',
+      'He painted Jewish faces, synagogues, streets, shops, schools — the places among which he had grown up. He did not just remember the past. He brought it back to life on the canvas.',
+      'For me this is a very powerful thought: his world had been destroyed, but as long as he kept painting it, that world kept living. And perhaps, through that, he himself kept living.',
+      'Another artist in our exhibition is Michel Opatowski. He was born after the war, in 1947. But his parents had survived the Holocaust, and its memory accompanied him throughout his life.',
+      'He became a graphic designer and artist. His story shows that the consequences of tragedy do not end with the end of a war — they are passed down to the next generations. But memory does not have to be only pain. It can become a source of creativity, beauty, and new images.',
+      'There are other artists as well. Osias Hofstätter survived Nazi persecution, lost his parents, and after the war created an utterly unique artistic language through which he spoke of human feeling.',
+      'David Meshulam created remarkable imagined worlds, filled with light and freedom.',
+      'Each of them found his own path. One preserved memory. Another created new worlds. A third searched for a new artistic language. But they were all united by one thing — they kept creating.',
+      'One more thing astonishes me. Many of these artists possessed enormous talent. But they did not become world-famous. Their paintings did not sell for millions of dollars. And still they kept painting. They created not for recognition — they simply could not not create.',
+      'I believe that the positive stories of other people affect us more than we realize. They do not need to be called role models. But when we see a person who has gone through unimaginable trials and has still kept the ability to love, to create, and to see beauty — it changes us too.',
+      'That is exactly why I created this exhibition. It is not only about the Holocaust. It is about human resilience. About the fact that even after the hardest trials, a person can live fully again. Art does not undo the pain, but it can help a person hold on to himself and find the inner fire once more.',
+      'And if even one person leaves the exhibition with the sense that life can continue after the hardest events, then all of this was not in vain.',
+      'In closing, I want to thank the Haifa Municipality, and especially Tatiana John, who understood the idea of this exhibition from my very first telling and supported the project. That was deeply important to me. Thanks to that support, the exhibition became a reality.',
+    ],
+  },
+  he: {
+    label: 'מילות האוצר',
+    title: 'למה יצרתי את התערוכה הזו',
+    attribution: '— לב פייגר, אוצר התערוכה',
+    paragraphs: [
+      'תמיד התעניינתי במה שמאפשר לאדם, אחרי טרגדיה, לא רק להתקיים אלא לחיות שוב במלוא העוצמה. מאיפה אנשים שואבים כוח? מה מצית מחדש את האש הפנימית?',
+      'אנו חיים בזמן קשה במיוחד. בייחוד היום, בישראל. יש שעוברים פציעות, יש שמאבדים יקירים, יש שנתקלים במציאות שלא יכלו לדמיין. ואז עולה השאלה המרכזית: איך ממשיכים לחיות אחרי זה?',
+      'רוב האנשים שמקשיבים לנו עכשיו נוסעים במכונית, נמצאים בעבודה או עסוקים בשגרת היום. רוצים להאמין שהם בסדר. אבל ייתכן שיש בין השומעים אדם שדווקא היום חשוב לו לשמוע שהחיים יכולים להימשך גם אחרי טרגדיה.',
+      'כשרכשתי את התמונה הראשונה שלי, עברתי בעצמי תקופה קשה. זו לא הייתה רק קנייה. זו הייתה תגובה אינסטינקטיבית — כאילו חיפשתי לא חפץ, אלא משענת. רק מאוחר יותר הבנתי: לא ציור חיפשתי, אלא תשובה לשאלה איך אדם ממשיך לחיות אחרי התמוטטות פנימית.',
+      'כך התחלתי לחפש אמנים שכבר עברו ניסיונות דומים, או שגדלו במשפחות שבהן זיכרון השואה עיצב את כל המשך החיים. הדבר שהדהים אותי הוא שרבים מהם לא רק שרדו — הם השתנו. המבט שלהם על העולם נעשה אחר. האמנות שלהם נעשתה אחרת.',
+      "יעקב וסובר הוא אחת הדוגמאות החזקות ביותר עבורי. הוא נולד בלודז'. בגיל שלוש עשרה הוא הגיע לגטו, לאחר מכן עבר את אושוויץ ואת 'צעדת המוות'. הוא איבד את הוריו ואת אחיו.",
+      'אחרי כל זה, אדם היה יכול להקדיש את כל חייו לציור של מוות וחורבן. אבל וסובר בחר אחרת. הוא הפך לשומר הזיכרון של עיירה יהודית שנמחקה.',
+      'הוא סיפר שכמעט בכל לילה חזרו אליו זיכרונות וסיוטים: ימים מאושרים, שנות אבל, חורבן עולמם כולו. בבוקר היה קם, נזכר בחלום — והולך לצייר.',
+      'הוא צייר פנים יהודיות, בתי כנסת, רחובות, חנויות, בתי ספר — המקומות שבהם גדל. הוא לא רק זכר את העבר. הוא החזיר אותו לחיים על הבד.',
+      'עבורי זוהי מחשבה חזקה במיוחד: עולמו הושמד, אך כל עוד הוא צייר אותו, אותו עולם המשיך להתקיים. ואולי גם הוא עצמו, דרך זה, המשיך לחיות.',
+      'אמן נוסף בתערוכה הוא מישל אופטובסקי. הוא נולד כבר אחרי המלחמה, בשנת 1947. אך הוריו ניצלו מהשואה, וזיכרונה ליווה אותו לאורך כל חייו.',
+      'הוא הפך למעצב גרפי ואמן. סיפורו מלמד שתוצאות הטרגדיה אינן נגמרות עם תום המלחמה — הן עוברות לדורות הבאים. אך הזיכרון יכול להיות לא רק כאב. הוא יכול להפוך למקור של יצירה, יופי ודימויים חדשים.',
+      'יש אמנים נוספים. אוסיאס הופשטטר שרד את רדיפות הנאצים, איבד את הוריו ולאחר המלחמה יצר שפה אמנותית ייחודית לחלוטין, שדרכה דיבר על רגשות אנושיים.',
+      'דוד משולם יצר עולמות דמיוניים מופלאים, מלאי אור וחירות.',
+      'כל אחד מהם מצא את הדרך שלו. האחד שמר על הזיכרון. השני יצר עולמות חדשים. השלישי חיפש שפה אמנותית חדשה. אך משהו אחד איחד את כולם — הם המשיכו ליצור.',
+      'ועוד דבר מדהים אותי. רבים מהאמנים האלה היו בעלי כישרון עצום. אבל הם לא הפכו למפורסמים בעולם. ציוריהם לא נמכרו במיליוני דולרים. ובכל זאת הם המשיכו לצייר. הם לא יצרו לשם תהילה — הם פשוט לא יכלו שלא ליצור.',
+      "אני מאמין שסיפורים חיוביים של אנשים אחרים משפיעים עלינו יותר ממה שנדמה לנו. לא חייבים לקרוא להם 'דמויות מופת'. אבל כאשר אנחנו רואים אדם שעבר ניסיונות בלתי נתפסים ועדיין שמר על היכולת לאהוב, ליצור ולראות יופי — זה משנה גם אותנו.",
+      'זו בדיוק הסיבה שיצרתי את התערוכה הזו. היא איננה רק על השואה. היא על חוסן האדם. על כך שגם אחרי הניסיונות הקשים ביותר, אדם יכול לחזור לחיות במלוא העוצמה. האמנות אינה מבטלת את הכאב, אך היא יכולה לסייע לאדם לשמור על עצמו ולמצוא מחדש את האש הפנימית.',
+      'ואם אדם אחד בלבד יצא מהתערוכה עם התחושה שגם אחרי האירועים הקשים ביותר החיים יכולים להימשך — אז כל זה לא היה לשווא.',
+      "ולסיום, אני רוצה להודות לעיריית חיפה, ובמיוחד לטטיאנה ג'ון, שכבר מהשיחה הראשונה הבינה את הרעיון של התערוכה הזו ותמכה בפרויקט. עבורי זה היה חשוב מאוד. בזכות התמיכה הזו התערוכה הפכה למציאות.",
+    ],
+  },
+  ru: {
+    label: 'Слово куратора',
+    title: 'Почему я создал эту выставку',
+    attribution: '— Лев Файгер, куратор',
+    paragraphs: [
+      'Меня всегда интересовало, что помогает человеку после трагедии не просто существовать, а снова жить полной жизнью. Где люди находят силы? Что вновь зажигает в них внутренний огонь?',
+      'Мы живем в очень сложное время. Особенно сегодня, в Израиле. Кто-то проходит через ранения, кто-то теряет близких, кто-то сталкивается с тем, что раньше даже не мог себе представить. И тогда возникает главный вопрос: как после этого продолжать жить?',
+      'Большинство людей, которые сейчас нас слушают, едут в машине, находятся на работе или занимаются своими обычными делами. И хочется верить, что у них всё хорошо. Но, возможно, среди наших слушателей есть человек, которому именно сегодня особенно важно услышать, что после трагедии жизнь может продолжаться.',
+      'Когда я купил свою первую картину, у меня самого был непростой период. Это была не просто покупка. Скорее, инстинктивный шаг — как будто я искал не вещь, а опору. Только позже я понял: я искал не картину, а ответ на вопрос, как человек продолжает жить после внутреннего разрушения.',
+      'Так я начал искать художников, которые уже прошли через подобные испытания, или выросли в семьях, где память о Катастрофе определила всю дальнейшую жизнь. Меня поразило, что многие из них не просто выжили — они изменились. Их взгляд на мир стал другим. Их искусство стало другим.',
+      'Яаков Вассовер — один из самых сильных примеров для меня. Он родился в Лодзи. В тринадцать лет оказался в гетто, затем прошел через Освенцим и «марш смерти». Он потерял родителей и брата.',
+      'После такого человек мог бы всю жизнь писать только о смерти и разрушении. Но Вассовер выбрал другое. Он стал хранителем памяти исчезнувшего еврейского местечка.',
+      'Он говорил, что почти каждую ночь к нему возвращались воспоминания и кошмары: счастливые дни, годы скорби, гибель всего их мира. Утром он вставал, вспоминал свой сон — и шел рисовать.',
+      'Он писал еврейские лица, синагоги, улицы, магазины, школы — места, среди которых вырос. Он не просто вспоминал прошлое. Он оживлял его на холсте.',
+      'Для меня это очень сильная мысль: его мир был уничтожен, но пока он его рисовал, этот мир продолжал жить. И, возможно, через это продолжал жить он сам.',
+      'Другой художник нашей выставки — Мишель Опатовский. Он родился уже после войны, в 1947 году. Но его родители пережили Катастрофу, и память о ней сопровождала его всю жизнь.',
+      'Он стал графическим дизайнером и художником. Его история показывает, что последствия трагедии не заканчиваются с окончанием войны — они передаются следующим поколениям. Но память может стать не только болью. Она может стать источником творчества, красоты и новых образов.',
+      'Есть и другие художники. Осияс Хофштеттер пережил преследования нацистов, потерял родителей и после войны создал совершенно уникальный художественный язык, через который говорил о человеческих чувствах.',
+      'Давид Мешулам создавал удивительные воображаемые миры, наполненные светом и свободой.',
+      'Каждый из них нашел свой путь. Один сохранял память. Другой создавал новые миры. Третий искал новый художественный язык. Но всех их объединяло одно — они продолжали творить.',
+      'Меня поражает еще одна вещь. Многие из этих художников обладали огромным талантом. Но они не стали мировыми знаменитостями. Их картины не продавались за миллионы долларов. И все же они продолжали писать. Они творили не ради признания — они просто не могли не творить.',
+      'Я верю, что позитивные истории других людей влияют на нас сильнее, чем мы думаем. Не обязательно называть их ролевыми моделями. Но когда мы видим человека, который прошел через невероятные испытания и все равно сохранил способность любить, создавать и видеть красоту, это меняет и нас.',
+      'Именно поэтому я создал эту выставку. Она не только о Катастрофе. Она о человеческой стойкости. О том, что даже после самых тяжелых испытаний человек способен снова жить полной жизнью. Искусство не отменяет боль, но оно может помочь человеку сохранить себя и вновь найти внутренний огонь.',
+      'И если после посещения выставки хотя бы один человек выйдет с ощущением, что после самых тяжелых событий жизнь может продолжаться, значит, все это было не зря.',
+      'И в завершение я хочу поблагодарить мэрию Хайфы, и особенно Таню Джуно, которая уже после моего первого рассказа поняла идею этой выставки и поддержала проект. Для меня это было очень важно. Благодаря этой поддержке выставка стала реальностью.',
+    ],
+  },
+};
